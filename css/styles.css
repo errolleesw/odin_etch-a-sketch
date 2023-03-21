@@ -1,0 +1,19 @@
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(var(--grid-size), 1fr);
+    grid-template-rows: repeat(var(--grid-size), 1fr);
+    /* gap: 1px; */
+    grid-gap: 0;
+    grid-row-gap: 0;
+}
+
+.square {
+    background-color: white;
+    border: 1px solid grey;
+    width:100%;
+    padding-bottom: 100%;
+}
+
+.square.hovered {
+    background-color: greenyellow;
+}
